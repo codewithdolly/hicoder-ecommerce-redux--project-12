@@ -1,14 +1,14 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
+import WebRoutes from "./WebRoutes";
 
 function App() {
   return (
-    <>    
-    <div className="App">
-   hey There
-    </div>
+    <>
+      <div className="App">
+        <WebRoutes />
+      </div>
     </>
-
   );
 }
 
