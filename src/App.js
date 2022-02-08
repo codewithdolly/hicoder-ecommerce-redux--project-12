@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 // https://fakestoreapi.com/products
-// import WebRoutes from "./WebRoutes";
+import WebRoutes from "./WebRoutes";
 
 function App() {
   return (
