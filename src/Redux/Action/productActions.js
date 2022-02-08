@@ -1,7 +1,7 @@
-import { ActionType } from "../Contants/actionType"
+import { ActionTypes } from "../Contants/actionTypes"
 export const SetProducts= (products)=>{
     return{
-        type: ActionType.SET_PRODUCTS,
+        type: ActionTypes.SET_PRODUCTS,
         payload: products,
     };
 };
@@ -10,7 +10,7 @@ export const SetProducts= (products)=>{
 
 export const selectedProducts= (project)=>{
     return{
-        type: ActionType.SELECTED_PRODUCT,
+        type: ActionTypes.SELECTED_PRODUCT,
         payload: product,
     }
 
