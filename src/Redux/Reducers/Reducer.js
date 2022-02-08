@@ -1,3 +1,5 @@
+
+
 const initialState = {
     products: [
         {
@@ -20,3 +22,5 @@ export const Reducer = (state= initialState, { type, payload }) => {
     }
 
 }
+
+export default Reducer;
