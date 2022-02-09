@@ -1,4 +1,4 @@
-import { ActionTypes } from "../Contants/actionTypes"
+import { ActionTypes } from "../Contants/ActionTypes"
 export const SetProducts= (products)=>{
     return{
         type: ActionTypes.SET_PRODUCTS,
