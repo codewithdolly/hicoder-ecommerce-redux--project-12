@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 // https://fakestoreapi.com/products
 import WebRoutes from "./WebRoutes";
-import { Header } from "./Components";
+import { Header, ProductComponents, ProductDetails, ProductListing } from "./Components";
 
 function App() {
   return (
