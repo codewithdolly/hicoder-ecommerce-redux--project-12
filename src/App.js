@@ -1,14 +1,16 @@
 import React from "react";
 import "./App.scss";
 // https://fakestoreapi.com/products
-// import WebRoutes from "./WebRoutes";
+import WebRoutes from "./WebRoutes";
+import { Header } from "./Components";
 
 function App() {
   return (
     <>
       <div className="App">
-      Hi
-        {/* <WebRoutes /> */}
+      <Header />
+      
+        <WebRoutes />
       </div>
     </>
   );
