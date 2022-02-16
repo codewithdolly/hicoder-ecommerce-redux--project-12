@@ -3,12 +3,12 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <nav class="header navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-        <a class="navbar-brand" href="#">
+      <nav className="header navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <a className="navbar-brand" href="#">
           Brand
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -16,24 +16,24 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Cloth <span class="sr-only">(current)</span>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Cloth <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Man
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -43,33 +43,33 @@ const Header = () => {
               >
                 Electronics
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a className="dropdown-item" href="#">
                   TV
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Laptop
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Mobile
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Charger
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Iron
                 </a>
               </div>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form className="form-inline my-2 my-lg-0">
             <input
-              class="form-control mr-sm-2"
+              className="form-control mr-sm-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
               Search
             </button>
           </form>
