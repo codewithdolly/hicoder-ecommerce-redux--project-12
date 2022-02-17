@@ -10,6 +10,7 @@ const ProductListing = () => {
 
   const dispatch=  useDispatch();
 
+  // fetching data
   const productApi = `https://fakestoreapi.com/products`;
   const fetchProducts = async () => {
     const response = await axios.get(productApi).catch((error) => {
