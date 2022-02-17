@@ -6,7 +6,6 @@ import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import {
   Header,
   ProductListing,
-  ProductComponents,
   ProductDetails,
 } from "./Components";
 
@@ -20,7 +19,8 @@ function App() {
 
         <Switch>
           <Route path="/" exact component={ProductListing} />
-          <Route path="/product:productId" exact component={ProductDetails} />
+          <Route path="/product/:productId" component={ProductDetails} />
+          
           <Route>404 not Found!</Route>
         </Switch>
       </Router>
