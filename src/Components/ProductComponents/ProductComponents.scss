@@ -1,0 +1,16 @@
+.productComponents{
+    // display: inline-block;
+    // flex-direction: row;
+    // justify-content: center;
+    .productComponents--card{
+        width: 18rem;
+        // height: 400px;
+
+        .productComponents--card--img{
+            justify-content: center;
+            width: 290px;
+            height: 350px;
+        }
+
+    }
+}
