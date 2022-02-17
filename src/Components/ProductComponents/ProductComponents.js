@@ -1,10 +1,10 @@
 import React from "react";
-// import "./ProductComponents.scss"
+import "./ProductComponents.scss"
 import { useSelector } from "react-redux";
 
 const ProductComponents = () => {
   const products = useSelector((state) => state.allProducts.products);
-  // const { title, id, price, category, image } = products;
+  const { title, id, price, category, image } = products;
 
   return (
     <>
@@ -14,7 +14,7 @@ const ProductComponents = () => {
             return (
               <>
                 <div className="col-md-3 my-3" key={product.id}>
-                  <div className="card h-100">
+                  <div className="card h-100 card-hover product-card ">
                     <img
                       src={product.image}
                       className="card-img-top img-thumbnail img-fluid shadow-sm p-4 border-bottom rounded-0"
