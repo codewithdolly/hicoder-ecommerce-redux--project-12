@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch} from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import ProductComponents from "../ProductComponents";
 import { SetProducts } from "../../Redux/Action/productActions";
 import axios from "axios";
@@ -8,7 +8,7 @@ const ProductListing = () => {
   const products = useSelector((state) => state);
   // console.log(products);
 
-  const dispatch=  useDispatch();
+  const dispatch = useDispatch();
 
   // fetching data
   const productApi = `https://fakestoreapi.com/products`;
@@ -28,9 +28,8 @@ const ProductListing = () => {
   return (
     <>
       <div className="productListing">
-        <h2>Product Listing</h2>
+        <ProductComponents />
       </div>
-      <ProductComponents />
     </>
   );
 };

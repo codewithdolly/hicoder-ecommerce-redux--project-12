@@ -8,23 +8,35 @@ const ProductComponents = () => {
 
   return (
     <>
-      {products.map((product) => {
-        return (
-          <>
-            <div className="productComponents container" key={product.id}>
-              <div className="card m-3 productComponents--card  d-flex justify-content-around" style={{width:"18rem"}}>
-                <img src={product.image} className="card-img-top" alt={product.title} className="img-fluid shadow-sm p-4 border-bottom productComponents--card--img" />
-                <div className="card-body">
-                  <h5 className="card-title">{product.title}</h5>
-                  <p><b>${product.price}</b></p>
-                  <p className="card-text">{product.category}</p>
-
+      <div className="productComponents container-fluid">
+        <div className="row mx-5 px-5 my-3">
+          {products.map((product) => {
+            return (
+              <>
+                <div className="col-md-3 my-3" key={product.id}>
+                  <div className="card h-100">
+                    <img
+                      src={product.image}
+                      className="card-img-top img-thumbnail img-fluid shadow-sm p-4 border-bottom rounded-0"
+                      alt={product.title}
+                      style={{ height: "350px" }}
+                    />
+                    <div className="card-body p-2">
+                      <p className="card-title">
+                        <b>{product.title}</b>
+                      </p>
+                      <p>
+                        <b>${product.price}</b>
+                        <p>{product.category}</p>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </>
-        );
-      })}
+              </>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 };
