@@ -35,7 +35,7 @@ const ProductDetails = () => {
   return (
     <>
       <div>
-        {Object.keys((product).length === 0 ? (<>loading...</>):(<>Heyy</>))}
+        {Object.keys((product).length === 0 ? (<div>loading...</div>):(<div>Heyy</div>))}
       </div>
     </>
   );
