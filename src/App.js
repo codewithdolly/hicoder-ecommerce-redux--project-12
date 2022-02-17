@@ -3,7 +3,6 @@ import "./App.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
-// https://fakestoreapi.com/products
 import {
   Header,
   ProductListing,
@@ -21,7 +20,7 @@ function App() {
 
         <Switch>
           <Route path="/" exact component={ProductListing} />
-          <Route path="/product:productId" exact ProductDetails component={ProductDetails} />
+          <Route path="/product:productId" exact component={ProductDetails} />
           <Route>404 not Found!</Route>
         </Switch>
       </Router>

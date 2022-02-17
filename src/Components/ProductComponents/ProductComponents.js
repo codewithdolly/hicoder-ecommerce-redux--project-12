@@ -6,13 +6,15 @@ import { useSelector } from "react-redux";
 const ProductComponents = () => {
   const products = useSelector((state) => state.allProducts.products);
 
-
-  const renderList= products.map((product) => {
+  const renderList = products.map((product) => {
     const { title, id, price, category, image } = product;
     return (
       <>
         <div className="col-md-3 my-3" key={id}>
-          <Link to={`/product/${id}`} className="text-decoration-none text-dark">
+          <Link
+            to={`/product/${id}`}
+            className="text-decoration-none text-dark"
+          >
             <div className="card h-100 card-hover product-card ">
               <img
                 src={image}
@@ -34,14 +36,12 @@ const ProductComponents = () => {
         </div>
       </>
     );
-  })
+  });
 
   return (
     <>
       <div className="productComponents container-fluid">
-        <div className="row mx-5 px-5 my-3">
-         {renderList}
-        </div>
+        <div className="row mx-5 px-5 my-3">{renderList}</div>
       </div>
     </>
   );
