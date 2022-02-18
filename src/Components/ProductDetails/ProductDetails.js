@@ -44,7 +44,7 @@ const ProductDetails = () => {
               <div className="col-12 col-sm-12 col-md-12 col-lg-6">
                 <img src={image} className="img-fluid shadow-sm p-4" width="450px" />
               </div>
-              <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-2 ">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-2 mx-3">
                 <h3>{title}</h3>
                 <h2 className="text-">
                   <a className="">${price}</a>
@@ -57,12 +57,7 @@ const ProductDetails = () => {
                   {category}
                 </button>
                 <p>{description}</p>
-                <div className="">
-                  <div className="">
-                    <i className="shop icon"></i>
-                  </div>
                   <div className="mt-3">
-                    {" "}
                     <button
                       type="button"
                       class="btn btn-success btn-lg mr-2 px-3"
@@ -73,7 +68,6 @@ const ProductDetails = () => {
                       Add to Cart
                     </button>
                   </div>
-                </div>
               </div>
             </>
           )}
