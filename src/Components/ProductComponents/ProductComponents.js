@@ -10,7 +10,7 @@ const ProductComponents = () => {
     const { title, id, price, category, image } = product;
     return (
       <>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-3" key={id}>
+        <div className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3" key={id}>
           <Link
             to={`/product/${id}`}
             className="text-decoration-none text-dark"
@@ -41,7 +41,7 @@ const ProductComponents = () => {
   return (
     <>
       <div className="productComponents container-fluid">
-        <div className="row mx-5 px-5 my-3">{renderList}</div>
+        <div className="row mx-1 my-3 mx-md-2 px-md-3 mx-lg-5 px-lg-5 my-lg-3">{renderList}</div>
       </div>
     </>
   );

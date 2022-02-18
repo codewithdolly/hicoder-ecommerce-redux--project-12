@@ -41,29 +41,39 @@ const ProductDetails = () => {
             <div>loading...</div>
           ) : (
             <>
-              <div className="col-12 col-md-4 ">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-6 ">
                 {" "}
                 <img src={image} className=" shadow-sm p-4" width="500px" />
               </div>
-              <div className="col-12 offset-md-2 col-md-6 mt-2 ">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-2 ">
                 <h3>{title}</h3>
                 <h2 className="text-">
                   <a className="">${price}</a>
                 </h2>
-                
-                <button type="button" class="btn btn-light border btn-block mt-4 mb-2 text-capitalize">{category}</button>
+
+                <button
+                  type="button"
+                  class="btn btn-light border btn-block mt-4 mb-2 text-capitalize"
+                >
+                  {category}
+                </button>
                 <p>{description}</p>
                 <div className="">
                   <div className="">
                     <i className="shop icon"></i>
                   </div>
-                 <div className="mt-3"> <button type="button" class="btn btn-success btn-lg mr-2 px-3">
-                    Buy Now
-                  </button>
-                  <button type="button" class="btn btn-warning btn-lg px-3">
-                    Add to Cart
-                  </button></div>
-                  
+                  <div className="mt-3">
+                    {" "}
+                    <button
+                      type="button"
+                      class="btn btn-success btn-lg mr-2 px-3"
+                    >
+                      Buy Now
+                    </button>
+                    <button type="button" class="btn btn-warning btn-lg px-3">
+                      Add to Cart
+                    </button>
+                  </div>
                 </div>
               </div>
             </>
