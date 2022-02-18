@@ -10,7 +10,7 @@ const ProductComponents = () => {
     const { title, id, price, category, image } = product;
     return (
       <>
-        <div className="col-md-3 my-3" key={id}>
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3 my-3" key={id}>
           <Link
             to={`/product/${id}`}
             className="text-decoration-none text-dark"
