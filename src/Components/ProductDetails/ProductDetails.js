@@ -42,9 +42,9 @@ const ProductDetails = () => {
           ) : (
             <>
               <div className="col-12 col-sm-12 col-md-12 col-lg-6">
-                <img src={image} className="img-fluid shadow-sm p-4" width="450px" />
+                <img src={image} className="img-fluid shadow-sm p-4" />
               </div>
-              <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-2 mx-3">
+              <div className="col-12 col-sm-12 col-md-12 col-lg-6 mt-2 mt-md-5">
                 <h3>{title}</h3>
                 <h2 className="text-">
                   <a className="">${price}</a>
