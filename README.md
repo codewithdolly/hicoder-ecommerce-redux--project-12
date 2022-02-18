@@ -1,3 +1,7 @@
+# This website is responsive.
+# This Project has made using React, Redux, Bootstrap, Scss and Routing.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
