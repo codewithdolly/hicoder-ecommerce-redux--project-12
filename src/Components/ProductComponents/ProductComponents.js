@@ -42,6 +42,7 @@ const ProductComponents = () => {
     <>
       <div className="productComponents container-fluid">
         <div className="row mx-1 my-3 mx-md-2 px-md-3 mx-lg-5 px-lg-5 my-lg-3">{renderList}</div>
+        Hi
       </div>
     </>
   );
