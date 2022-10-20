@@ -1,9 +1,14 @@
-import { ActionTypes } from "../Contants/ActionTypes";
+import {ActionTypes} from "../Contants/actionTypes"
+import productApi from "../../Components/apis/productApi";
+import axios from "axios";
 
-export const SetProducts = (products) => {
+export const fetchProducts = async () => {
+  const response= await axios.get("/products")
+  console.log(response);
+  
   return {
     type: ActionTypes.SET_PRODUCTS,
-    payload: products,
+    payload: response,
   };
 };
 
