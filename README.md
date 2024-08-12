@@ -1,5 +1,7 @@
-# This website is responsive.
-# This Project has made using React, Redux, Bootstrap, Scss and Routing.
+This website is responsive.
+This Project has made using React, Redux, Bootstrap, Scss and Routing.
+![image](https://github.com/user-attachments/assets/a254179d-e67d-4e0f-b665-f48541d8e10f)
+
 
 
 # Getting Started with Create React App
